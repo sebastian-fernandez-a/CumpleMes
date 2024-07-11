@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CumpleMes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assent/css/styles.css">
+    <link rel="icon" href="./assent/img/toppng.com-my-melody-melody-hello-kitty-369x648.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="letra titulo a">Feliz CumpleMes</h1>
+        <p class="date titulo"><b>12/01/2024 - 12/07/2024</b> </p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card" style="background-image: url('./assent/img/imagen1.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen2.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen3.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen4.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen5.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen6.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen7.jpeg');"></div>
+        </div>
+        
+        <div class="letter-container mt-5">
+            <h2 class="titulo2">Mi Carta para Ti</h2>
+            <div class="letter-content">
+              
+                <p>
+                    Amor hoy cumplimos 6 meses juntos y a pesar de las discusiones logramos solucionar siempre cada problema que se presenta en el camino, no sabes lo feliz que me hace estar contigo aunque sea un ratito,
+                    Porque eres todo para mi eres la persona correcta, la persona que me da calma que hace que pueda ver las cosas con claridad, la que me apoya en todo, espero que siempre podamos encontrar la solución para todo y que siempre pongamos nuestro amor por encima de todo, nunca olvides que eres una persona muy importante, especial , maravillosa para mí,
+                    te amo mucho mi niña preciosa felices 6 meses juntitos ❤️‍🩹
+                </p>
+                <p>Con todo mi amor.</p>
+                <p>Guillermo Alejandro.</p>
+            </div>
+        </div>
+
+        <!-- Carrusel de videos -->
+        <div class="container mt-5 video-carousel">
+            <h2 class="titulo2 text-center">Mejores Momentos</h2>
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="video-wrapper">
+                            <video id="video1" width="600" height="400" controls>
+                                <source src="./assent/videos/video1.MOV" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video1')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video2" width="600" height="400" controls>
+                                <source src="./assent/videos/video2.MOV" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video2')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item a">
+                        <div class="video-wrapper">
+                            <video id="video3" width="600" height="400" controls>
+                                <source src="./assent/videos/video3.MOV" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video3')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video4" width="600" height="400" controls>
+                                <source src="./assent/videos/video4.MOV" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video4')">&#9658;</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assent/js/script.js"></script>
+    <script>
+        // Pausar videos cuando se cambia de diapositiva
+        $('#videoCarousel').on('slide.bs.carousel', function () {
+            var videos = document.querySelectorAll('video');
+            videos.forEach(function(video) {
+                video.pause();
+            });
+        });
+
+        // Función playPause para el botón de reproducción
+        function playPause(videoId) {
+            var video = document.getElementById(videoId);
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>
