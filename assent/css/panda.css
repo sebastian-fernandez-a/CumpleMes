@@ -6,7 +6,16 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #ee87a4;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f3e6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/fondo-index.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija la imagen para evitar el movimiento */
 }
 
 
@@ -51,7 +60,7 @@ form input {
   width: 100%; /* Make input fill the width */
 }
 form input:focus {
-  border-color: #9f9986;
+  border-color: #a5945c;
 }
 form input:not(:last-child) {
   margin-bottom: 0.9em;
@@ -62,8 +71,8 @@ form button {
   border-radius: 2em;
   border: none;
   outline: none;
-  background-color: #ee87a4;
-  color: #2e0d30;
+  background-color: #9540db;
+  color: #d9cfda;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -82,7 +91,8 @@ form button {
 
 /* New CSS */
 .form-image {
-  width: 30%; /* Adjust the percentage as needed */
+  width: 70%; /* Adjust the percentage as needed */
   height: auto;
   margin-bottom: 1em; /* Space between image and form */
+  margin-left: 40px;
 }

@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Amifer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assent/css/styles.css">
-    <link rel="icon" href="./assent/img/toppng.com-my-melody-melody-hello-kitty-369x648.png" type="image/x-icon">
+    <link rel="icon" href="./assent/img/icono-duki.jfif" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1 class="letra titulo a">Feliz CumpleMes</h1>
-        <p class="date titulo"><b>12/01/2024 - 12/07/2024</b> </p>
+        <h1 class="letra titulo ">Feliz CumpleMes</h1>
+        <p class="date titulo1"><b> 16/07/2024 </b> </p>
     </header>
     <main>
         <div class="container">
@@ -28,16 +28,13 @@
         <div class="letter-container mt-5">
             <h2 class="titulo2">Mi Carta para Ti</h2>
             <div class="letter-content">
-              
-                <p>
-                    Amor hoy cumplimos 6 meses juntos y a pesar de las discusiones logramos solucionar siempre cada problema que se presenta en el camino, no sabes lo feliz que me hace estar contigo aunque sea un ratito,
-                    Porque eres todo para mi eres la persona correcta, la persona que me da calma que hace que pueda ver las cosas con claridad, la que me apoya en todo, espero que siempre podamos encontrar la solución para todo y que siempre pongamos nuestro amor por encima de todo, nunca olvides que eres una persona muy importante, especial , maravillosa para mí,
-                    te amo mucho mi niña preciosa felices 6 meses juntitos ❤️‍🩹
-                </p>
-                <p>Con todo mi amor.</p>
-                <p>Guillermo Alejandro.</p>
+                <p>Nuestro primer mes juntos ✨</p>
+                <p>El tiempo ha pasado muy rápido desde que te conocí, no es por mal pero el hecho de estar contigo y pasar tiempo de caridad hace que no nos demos cuenta de que los días y meses pasan tan rápido, al estar en un lugar donde quieres tanto a una persona hace que todo esto pase rápido, yo la verdad mi niña no busco una relación de meses, yo quiero una relación que dure años, si por mi fuera hasta viejitos pero como ya sabes que el que pasará a tercera edad mucho antes seré yo, bueno cosas que pasan, volvemos al tema del porqué me gustas tanto, del porqué estoy tan enamorado de ti, si te contara detalle a detalle no acabaría nunca, pero te diré unas cuantas: desde que te vi por primera vez estuve muy nervioso la verdad, eres muy hermosa y eso era lo que me ponía nervioso, al estar a tu lado me sentía como duki cuando Emilia le perrea jajsjsja, después poco a poco entraba en confianza, la verdad es qué conectamos tan bien desde el primer día, tanto así que en mis pensamientos estabas ya vestida de blanco, teníamos un gatito, es que ya me imaginaba todo eso y el besoo, nuestro primer beso fue como si estuviera en una montaña rusa, tenía un sin fin de emociones , el contacto físico y el cariño, como decirte que cada vez que te veo ya me activas oxitocina porqué se que soy feliz a tu lado, siento amor cuando me abrazas, siento felicidad cuándo hablamos, siento tranquilidad cuando sonríes, siento me besas siento la dopamina, tantas cosas que siento a tu lado, la verdad es que no me cansaré de decirte que eres lo mejor que me ha pasado, como te conté una vez, eres el primer pensamiento desde que me despierto hasta que me duermo, es más hasta en mis sueños apareces o sea que nunca estás fuera de mis pensamientos, mi princesa con todo esto solo quiero decirte klk mi loco tamos activo o no, me quieres o no cara asintomática, digo cara económica JAJAJSJSJ te amo </p>
+                
+                <p>Sebastian Fernández.</p>
             </div>
         </div>
+        
 
         <!-- Carrusel de videos -->
         <div class="container mt-5 video-carousel">
@@ -62,7 +59,7 @@
                             <button class="play-button" onclick="playPause('video2')">&#9658;</button>
                         </div>
                     </div>
-                    <div class="carousel-item a">
+                    <div class="carousel-item">
                         <div class="video-wrapper">
                             <video id="video3" width="600" height="400" controls>
                                 <source src="./assent/videos/video3.MOV" type="video/mp4">
@@ -108,11 +105,18 @@
         // Función playPause para el botón de reproducción
         function playPause(videoId) {
             var video = document.getElementById(videoId);
+            var button = video.nextElementSibling;
             if (video.paused) {
                 video.play();
+                button.style.display = 'none';
             } else {
                 video.pause();
+                button.style.display = 'block';
             }
+
+            video.onended = function() {
+                button.style.display = 'block';
+            };
         }
     </script>
 </body>
