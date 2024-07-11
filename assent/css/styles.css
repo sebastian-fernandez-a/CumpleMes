@@ -1,10 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f3e6;
+    background-color: #7c319e;
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('../img/fondo-pantalla-abstracto-humo-color-diseno-fondo-estetico (1).jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/fondo-pantalla-abstracto-humo-color-diseno-fondo-estetico\ \(1\).jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center center; /* Centra la imagen */
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #5b1385;
+    background-color: #540085;
     text-align: center;
     padding: 1em;
 }
@@ -24,7 +24,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra al texto */
     letter-spacing: 2px; /* Espaciado entre letras */
     text-align: center; /* Centrar el texto */
-    background: linear-gradient(90deg, #FFD700, #FFB800); /* Degradado de dorado claro a dorado oscuro */
+    background: linear-gradient(90deg, #ffffff, #ffffff); /* Degradado de dorado claro a dorado oscuro */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
