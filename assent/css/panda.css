@@ -19,7 +19,7 @@ body {
   background-attachment: fixed; /* Fija la imagen para evitar el movimiento */
 }
 
-/* Media query para pantallas grandes (PC) */
+/* Media query para pantallas grandes (PC)  bodrrar cualquier cosaco*/
 @media only screen and (min-width: 768px) {
   body {
     background-repeat: repeat; /* Permite que la imagen de fondo se duplique */
